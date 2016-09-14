@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<script src="scripts/vendor/jquery/jquery-3.1.0.slim.min.js"></script>
+	<script src="scripts/vendor/clipboardjs/dist/clipboard.min.js"></script>
+	
+    <title>Omega Booking Confirmation</title>
+	
+</head>
+
+<body>
+
+	<div class="top-container">
+	
+		<input class="input" id="textInput" type="text" value="paste booking ref"/><br /><br />
+		
+		<!-- Trigger(copy) -->
+		<button class="btn" data-clipboard-target="#bookingConfirmation"><span></span>One CLICK to update details and copy the text below</button>
+		
+	</div>
+	
+	<!-- Target(copy) -->
+	<div id="bookingConfirmation" class="bookingConfirmation">
+	
+		<p>
+			Dear Supplier / Carrier,<br><br>
+			Thank you for your booking request.<br>
+			Your delivery has now been scheduled and the Booking Reference number is 
+			
+			<span id="getInfoFrom" class="bold ref">x-xxx-xxxxxx</span><br>
+			
+			Your reserved delivery slot is on 
+			
+			<span id="dateFromRef" class="bold date">dd/mm/yyyy</span>
+			
+			at 
+			
+			<span class="time">08:00</span> into our Warehouse address below.<br><br>
+
+			Please apply this label to all pallets (pallet delivery) <br>
+			or boxes (box delivery) being delivered.<br><br><br>
+		</p>
+
+		<img id="qrCodeImg" class="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?data=5-001-160910&amp;size=150x150" alt="" title="" />
+
+		<p>
+
+			<span id="refUnderQrCode" class="bold">x-xxx-xxxxxx</span><br><br>
+			The delivery address for this warehouse is:-<br><br>
+
+			The Hut Group - OMEGA<br>
+			Omega South<br>
+			Skyline Drive<br>
+			Great Sankey<br>
+			Warrington<br>
+			WA5 3UG<br>
+			
+			<span class="bold">WA5 3TP for use in a Sat Nav</span><br><br>
+
+			We do have a full supplier manual containing our delivery requirements however please find below some key points worth checking before attempting to deliver into us.<br>
+			Please note the below list is not a replacement for reading our Supplier Manual but is intended to support you with some quick easy checks.<br><br>
+
+			•             All your cartons/pallets should be labelled with your Booking Reference Number as above.<br>
+			•             All PO’s being delivered must be quoted at time of booking request. <br>
+			•             Please ensure that your driver/carrier has the booking reference as they will be required to quote this at the gatehouse to gain entry to the site.<br>
+			•             If delivering on pallets, these must be Euro’s (1200mm x 800mm).<br>
+			•             Please note that the maximum height for a single pallet of stock is 1.8metres (including the pallet).<br>
+			•             Please note that the maximum weight for a single pallet of stock is 1000kg (including the pallet)<br>
+			•             All items on the delivery must be barcoded.<br>
+			•             No outer cartons can weigh more than 25kg, i.e. one man lift<br>
+			•             No delivery will be reworked by The Hut Group. All Deliveries must comply with the requirements of our Supplier Manual otherwise you will be asked to uplift and rework it<br>
+			•             We cannot accept extra-long trailers >16.5m due to turning circle restrictions onsite.<br><br>
+
+			<span class="bold">
+			
+			On the day of delivery if you know that your driver is running late or is unlikely to show please contact us as soon as possible on <a href="mailto:latenoshow@thehutgroup.com">latenoshow@thehutgroup.com</a> informing us of your booking reference and anticipated time of arrival.<br> 
+			We will then attempt to rebook you to a date/time more suitable to your new arrival time.<br> 
+			If you do not inform us in advance you will be asked to wait until our next available slot on arrival. Please note priority will be given to vehicles that turn up on time. (remove )
+			
+			</span><br><br>
+
+			Regards<br><br>
+
+			Goods Inwards Team
+			
+		</p><br>
+	</div>
+	
+	<!--Scripts-->
+	
+	<script src="scripts/clipboard.js"></script>
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

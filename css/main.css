@@ -1,0 +1,59 @@
+html {
+	width: 100%;
+}
+body {
+	font-family: calibri;
+	font-size: 14px;
+	width: 100%;
+	margin: 0 auto;
+	background: #BBBBBB;
+}
+p {
+	margin: 0;
+}
+.bookingConfirmation {
+	width: 90%;
+	margin: 10px auto;
+	background-color: #FFFFFF;
+	padding: 2%;
+}
+.bold {
+	font-weight: bold;
+}
+.date {
+	color: green;
+}
+.ref {
+	color: red;
+}
+.time {
+	color: blue;
+	font-weight: bold;
+}
+.input {
+	text-align: center;
+	width: 120px;
+}
+.btn {
+	margin-bottom: 10px;
+	background: #3C763D;
+	border: 0;
+	color: #FFFFFF;
+	margin-bottom: 0;
+	width: 120px;
+	transition: background 1s;
+	border-radius: 5px;
+	font-weight: 100;
+}
+.btn:hover {
+	background: #8FCF45;
+	color: black;
+}
+.btn:focus {
+	outline: none;
+}
+.top-container {
+	margin-top: 0;
+	background: #222222;
+	padding: 10px;
+}
